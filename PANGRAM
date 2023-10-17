@@ -1,0 +1,27 @@
+import java.uitl.*;
+public class PangramChecker {
+    public static boolean isPangram(String str) {
+        str = str.toLowerCase();
+        boolean[] mark = new boolean[26];
+
+        for (int i = 0; i < str.length(); i++) {
+            if ('a' <= str.charAt(i) && str.charAt(i) <= 'z') {
+                mark[str.charAt(i) - 'a'] = true;
+            }
+        }
+
+        for (int i = 0; i < 26; i++) {
+            if (!mark[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String input = "The quick brown fox jumps over the lazy dog"; // Example input
+        boolean isPangram = isPangram(input);
+        System.out.println("Is it a pangram? " + isPangram);
+    }
+}
