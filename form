@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <fieldset>
+        <legend>LOGIN</legend>
+        <form action="#" method="get">
+            <table>
+                <tr>      
+             <td><label for="fname">First name</label></td>
+             <td><input type="text" id="fname" required/></td>
+            </tr>
+          
+            <tr>
+                <td><label for="lname">Last name</label></td>
+                <td><input type="text" id="lname" required/></td>
+            </tr>
+           
+            <tr>
+                <td><label for="dob">DOB</label></td>
+                <td><input type="date" id="dob" required/></td>
+            </tr>
+           
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+            <select>
+                
+                <option value="ind">India</option>
+                <option value="us">United States</option>
+                <option value="afr">Africa</option>
+            </select>
+            </td>
+            </tr>
+           
+            <tr>                
+                <td><label for="gender">Gender</label></td>
+                <td><input type="checkbox" id="gender" name="gender" />Female
+            <input type="checkbox" id="gender" name="gender"/>male
+            </td>
+            </tr>
+           
+            <tr>               
+                <td><label for="pro">Profession</label></td>
+                <td><input type="text" id="pro" required/></td>
+            </tr>
+            
+            <tr>                
+                <td><label for="email">email</label></td>
+                <td><input type="email" id="femail" required/></td>
+            </tr>
+           
+            <tr>                
+                <td><label for="mob">MOB</label></td>
+                <td><input type="tel" id="mob" required/></td>
+         
+            </tr>
+           
+            <tr>
+                <td>
+                    <center>
+                    <button type="Submit">Submit</button>
+                    <button type="Reset">Reset</button>
+                    </center>
+                </td>
+            </tr>
+        
+           
+        </form>
+    </table>
+    </fieldset>
+</body>
+</html>
